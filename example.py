@@ -1,11 +1,11 @@
 import time
-from cursesswitch import printer
+import cursesswitch
 
 def main():
-    printer.print_line("Red line", color="red")
+    cursesswitch.print_line("Red line", color="red")
     time.sleep(1)
-    printer.clear_screen()
-    printer.print_line("Bold blue line", color="blue", is_bold=True)
+    cursesswitch.clear_screen()
+    cursesswitch.print_line("Bold blue line", color="blue", is_bold=True)
     time.sleep(1)
 
-printer.wrapper(main)
+cursesswitch.wrapper(main)
